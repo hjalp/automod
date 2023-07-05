@@ -1,0 +1,19 @@
+lemmy_base_uri: https://lemmy.myinstance.com # The base instance URL without anything trailing like /api/v3/
+timezone: 'Europe/Berlin' # Timezone as defined in the tz database: https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+
+scheduled_posts:
+  - community: 'my_lemmy_community'
+    title: 'Free Talk Friday'
+    content: |
+      ## Happy Friday!
+
+      **This is the weekly free talk thread at My Lemmy Community.**
+
+      Please feel free to discuss anything and everything happening in your life! Remember to respect the forum rules:
+      - Don't post things that are related to the Drama Controversy of $CURRENTYEAR.
+      - Everything you post on the Internet will be here forever. Don't reveal any personally identifiable information.
+    external_link: # Leave empty to not add a link
+    frequency_unit: 'weeks' # minutes, hours, days, weeks
+    frequency: 1 # Schedule the post every X minutes/hours/days/weeks
+    day: 'friday' # Day of the week if frequency_unit is week. Defaults to Monday if day is not chosen for a weekly post
+    time: '07:00' # 24-hour time if frequency is 'day' or 'week'. See the notes for more info
